@@ -1,0 +1,36 @@
+mixin section-9
+    section.section-9#section-9
+        .container-fluid
+            .section-9-wrapper
+                .section-9-wrapper__img
+                    img(src="images/image-removebg-preview.png", alt="")
+                .section-9-wrapper__info
+                    h3.mia__title Купи Мию сегодня
+                    
+                    #countdown2.countdown
+                        .countdown__title  До конца акции  осталось:
+                        .countdown-row
+                            .countdown-number
+                                span.hours.countdown-time
+                                .countdown-text Часов
+                            span.ch :
+                            .countdown-number
+                                span.minutes.countdown-time
+                                .countdown-text Минут
+                            span.ch :
+                            .countdown-number
+                                span.seconds.countdown-time
+                                .countdown-text Секунд
+                    .action-prices.mb-4
+                        .action-prices__old
+                            span Старая цена:
+                            strong 2000P
+                        .action-prices__new
+                            span Цена по акции:
+                            strong 1599P
+                    .form
+                        input(type="text" placeholder="Введите имя")
+                        input(type="tel" placeholder="Ваш телефон")
+                        button.button Заказать сейчас
+                        span.left-count.text-center Осталось по акции 15 штук
+                

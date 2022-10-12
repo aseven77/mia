@@ -1,0 +1,154 @@
+.section-4 {
+    padding: 31px 0;
+}
+
+.section-4-wrapper {
+    padding: 45px 0;
+    background: #53528E;
+    border-radius: 35px;
+    height: 540px;
+
+    @include medium {
+        height: auto;
+        padding: 45px 20px;
+    }
+
+    .button {
+        max-width: 430px;
+        width: 100%;
+        height: 64px;
+        margin: 0 auto;
+        display: flex;
+        padding: 0;
+    }
+}
+
+.mia__title {
+  
+    font-size: 53px;
+    line-height: 1.45;
+    letter-spacing: -0.01em;
+    color: #FFFFFF;
+    font-weight: 800;
+    margin-bottom: 27px;
+}
+
+.section-4-main {
+    height: 242px;
+    background: rgba(#1F1E42 , 0.4);
+    border-radius: 20px;
+    max-width: 864px;
+    display: flex;
+    padding: 35px 80px;
+    margin: 0 auto 45px;
+
+    @include medium {
+        padding: 30px;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        gap: 60px;
+    }
+}
+
+.countdown-row {
+    display: flex;
+}
+
+.countdown-time {
+    width: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    flex: 0 0 auto;
+    background: #2A212E;
+    border-radius: 14px;
+    font-size: 36px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 7px;
+}
+
+.ch {
+    display: block;
+    color: #FFFFFF;
+    opacity: 0.4;
+    margin: 0 10px;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.countdown__title {
+    font-weight: 700;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.33;
+    margin-bottom: 26px;
+    color: #FFFFFF;
+}
+
+.countdown {
+    max-width: 290px;
+}
+
+.countdown-text {
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.61;
+    font-size: 18px;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+
+.action-prices {
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    margin-left: auto;
+    gap: 0 26px;
+
+    @include medium {
+        margin-left: 0;
+    }
+
+    @include small {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__new {
+        width: 198px;
+        height: 89px;        
+        background: #5D5AFF;
+        border-radius: 14px;
+        text-align: center;
+        padding: 8px 0;
+
+        span {
+            font-weight: 500;
+            font-size: 17px;
+            display: block;
+        }
+
+        strong {
+            font-size: 34px;
+            font-weight: 700;
+        }
+    }
+
+    &__old {
+        
+        span {
+            font-weight: 500;
+            font-size: 17px;
+            display: block;
+        }
+
+        strong {
+            font-size: 34px;
+            font-weight: 700;
+            text-decoration: line-through;
+        }
+    }
+}

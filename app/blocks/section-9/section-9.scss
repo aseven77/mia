@@ -1,0 +1,96 @@
+.section-9-wrapper {
+    background: #51405A;
+    border-radius: 20px;
+    height: 794px;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 51px;
+    display: flex;
+
+    @include large {
+        padding: 0 30px;
+    }
+
+    @include medium {
+        flex-direction: column;
+        height: auto;
+        padding: 0 30px 30px;
+    }
+
+    @include small {
+        padding: 0 15px 30px;
+    }
+
+    &__img {
+        top: -35px;
+        position: relative;
+        max-width: 335px;
+        margin-right: 82px;
+
+        @include medium {
+            margin: 0 auto;
+        }
+    }
+
+    &__info {
+        padding-top: 42px;
+
+        @include medium {
+            display: flex;
+            align-items: center;
+            padding-top: 0;
+            flex-direction: column;
+        }
+    }
+
+    .countdown__title {
+        text-align: left;
+    }
+
+    .countdown-row {
+        margin-bottom: 40px;
+    }
+}
+
+.section-9 {
+    padding: 107px 0;
+
+    @include small {
+        padding: 50px 0;
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    max-width: 493px;
+
+    @include small {
+        max-width: none;
+        width: 100%;
+    }
+
+    input {
+        width: 100%;
+        height: 56px;
+        background: #FFFFFF;
+        border-radius: 57px;
+        border: 0;
+        font-weight: 500;
+        font-size: 18px;
+        padding: 0 30px;
+        margin-bottom: 25px;
+    }
+
+    .button {
+        height: 64px;
+        margin-bottom: 28px;
+    }
+}
+
+.left-count {
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFFFFF;
+    opacity: 0.6;
+}

@@ -1,0 +1,42 @@
+.logo--footer {
+    color: #000;
+}
+
+.f-flex {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+}
+
+.site-name {
+    font-weight: 700;
+    font-size: 16px; 
+ }
+
+.footer-contacts  {
+
+    span {
+        font-size: 16px;
+    }
+    
+    a {
+        font-weight: 700;
+        font-size: 16px;
+        color: #000000;
+    }
+}
+
+.footer-desc  {
+    font-weight: 500;
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.3125;
+    opacity: 0.5;
+}
+
+.footer {
+    
+    .container-fluid {
+        max-width: 1300px;
+    }
+}

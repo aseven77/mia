@@ -1,0 +1,55 @@
+.section-6 {
+    padding: 65px 0;
+
+    @include small {
+        padding: 25px 0;
+    }
+
+    .section__title:not(:last-child) {
+        margin-bottom: 40px;
+    }
+}
+
+.stem-item {
+
+    &__bg {
+        height: 224px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        background-color: #FDF7FF;
+        border-radius: 19px;
+        margin-bottom: 55px;
+    }
+
+    &__number {
+        position: absolute;
+        width: 78px;
+        height: 78px;
+        top: -39px;
+        right: -39px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: -0.02em;
+        line-height: 1;
+        font-size: 30px;
+        font-weight: 700;
+        color: #FFFFFF;
+        border-radius: 100%;
+        z-index: 3;
+        background: #8894FF;
+
+        @include laptop {
+            right: 0;
+        }
+    }
+
+    &__desc {
+        font-weight: 500;
+        font-size: 16px;
+        color: #000000;
+        line-height: 1.625;
+    }
+}

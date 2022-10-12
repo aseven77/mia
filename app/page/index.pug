@@ -1,0 +1,32 @@
+extends layout/main.pug
+
+include ../blocks/head/head.pug
+include ../blocks/section-1/section-1.pug
+include ../blocks/section-2/section-2.pug
+include ../blocks/section-3/section-3.pug
+include ../blocks/section-4/section-4.pug
+include ../blocks/section-5/section-5.pug
+include ../blocks/section-6/section-6.pug
+include ../blocks/section-7/section-7.pug
+include ../blocks/section-8/section-8.pug
+include ../blocks/section-9/section-9.pug
+include ../blocks/section-10/section-10.pug
+
+
+block title
+    +head('Мия с сердечком')
+block pagecontent
+    +section-1
+    +section-2
+    +section-3
+    +section-4
+    +section-5
+    +section-6
+    +section-7
+    +section-8
+    +section-9
+    +section-10
+
+    script(src="js/libs.min.js") 
+    script(src="js/script.js") 
+    script(src="js/timer.js") 

@@ -1,0 +1,25 @@
+mixin section-10
+    footer.footer
+        .container-fluid
+            .footer-main
+                .row.align-items-center.mb-2
+                    .col-md
+                        .f-flex
+                            .logo.logo--footer Лого
+                            .site-name (с) Медвежонок Жорик
+                    .col-md-auto
+                        .footer-contacts 
+                            span Позвони нам: 
+                            a(href="tel:+71155004466") + 7 (115) 500-4466
+                .footer-desc 
+                    p Авторское право на&nbsp;систему визуализации содержимого портала iz.ru, а&nbsp;также на&nbsp;исходные данные, включая тексты, фотографии, аудио- и&nbsp;видеоматериалы, графические изображения, иные произведения и&nbsp;товарные знаки принадлежит ООО &laquo;МИЦ &laquo;Известия&raquo;. Указанная информация охраняется в&nbsp;соответствии с&nbsp;законодательством&nbsp;РФ и&nbsp;международными соглашениями.
+    #modal-callback.modal.fade(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')
+        .modal-dialog
+            .modal-content
+                .modal-header
+                    button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Закрыть')
+                .modal-body
+                    .form
+                        input(type="text" placeholder="Введите имя")
+                        input(type="tel" placeholder="Ваш телефон")
+                        button.button Заказать сейчас

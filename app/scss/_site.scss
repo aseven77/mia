@@ -1,0 +1,8 @@
+.container-fluid {
+    max-width: 1220px;
+    position: relative;
+
+    @include small {
+        padding: 0 15px;
+    }
+}
