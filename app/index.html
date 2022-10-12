@@ -30,7 +30,7 @@
               </ul>
             </div>
             <button class="header-contacts__callback" aria-label="Перезвоните мне" data-toggle="modal" data-target="#modal-callback">Перезвоните мне</button>
-            <button class="open-menu"><span> </span><span> </span><span> </span></button>
+            <button class="open-menu js-open-menu"><span> </span><span> </span><span> </span></button>
           </div>
         </div>
       </header>
@@ -359,11 +359,11 @@
               <div class="action-prices__old"><span>Старая цена:</span><strong>2000P</strong></div>
               <div class="action-prices__new"><span>Цена по акции:</span><strong>1599P</strong></div>
             </div>
-            <div class="form">
-              <input type="text" placeholder="Введите имя"/>
-              <input type="tel" placeholder="Ваш телефон"/>
+            <form class="form">
+              <input type="text" placeholder="Введите имя" required="required"/>
+              <input type="tel" placeholder="Ваш телефон" required="required"/>
               <button class="button">Заказать сейчас</button><span class="left-count text-center">Осталось по акции 15 штук</span>
-            </div>
+            </form>
           </div>
         </div>
       </div>
@@ -395,11 +395,11 @@
             <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Закрыть"></button>
           </div>
           <div class="modal-body">
-            <div class="form">
-              <input type="text" placeholder="Введите имя"/>
-              <input type="tel" placeholder="Ваш телефон"/>
+            <form class="form">
+              <input type="text" placeholder="Введите имя" required="required"/>
+              <input type="tel" placeholder="Ваш телефон" required="required"/>
               <button class="button">Заказать сейчас</button>
-            </div>
+            </form>
           </div>
         </div>
       </div>
