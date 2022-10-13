@@ -18,10 +18,6 @@ $mail->addAddress('aseven77@mail.ru');
 $mail->addAddress('aseven771@gmail.com');
 $mail->addAddress('info-raisart@yandex.ru');
 
-uyTT-rOIuu29
-
-
-test.mail.site
 
 $c = true;
 $mail->Subject = 'Заявка с сайта Мия';
