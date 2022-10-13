@@ -29,8 +29,9 @@ mixin section-9
                             span Цена по акции:
                             strong 1599P
                     form.form
-                        input(type="text" placeholder="Введите имя" required)
-                        input(type="tel" placeholder="Ваш телефон" required)
+                        input(type="hidden" name="БОТ")
+                        input(type="text" name="name" placeholder="Введите имя" required)
+                        input(type="tel" name="phone" placeholder="Ваш телефон" required)
                         button.button Заказать сейчас
                         span.left-count.text-center Осталось по акции 15 штук
                 

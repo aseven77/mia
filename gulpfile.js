@@ -85,7 +85,11 @@ function scss() {
 
 function css_libs() {
     parallel('scss');
-    return src(['app/libs/bootstrap/dist/css/bootstrap.css', 'app/libs/swiper/swiper-bundle.css'])
+    return src([
+        'app/libs/bootstrap/dist/css/bootstrap.css',
+        'app/libs/swiper/swiper-bundle.css',
+        'app/libs/sweetalert2/dist/sweetalert2.min.css'
+    ])
         .pipe(concat('libs.min.css'))
         .pipe(cssnano())
         .pipe(dest('app/style'));

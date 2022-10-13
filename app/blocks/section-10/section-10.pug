@@ -19,7 +19,8 @@ mixin section-10
                 .modal-header
                     button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Закрыть')
                 .modal-body
-                    form.form
-                        input(type="text" placeholder="Введите имя" required)
-                        input(type="tel" placeholder="Ваш телефон" required)
+                    form.form.js-form
+                        input(type="hidden" name="БОТ")
+                        input(type="text" name="name" placeholder="Введите имя" required)
+                        input(type="tel" name="phone" placeholder="Ваш телефон" required)
                         button.button Заказать сейчас

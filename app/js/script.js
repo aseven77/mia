@@ -47,40 +47,44 @@ $(document).ready(function () {
         return false;
     });
 
-    $(".js-open-menu").on("click" , function() {
+    $(".js-open-menu").on("click", function () {
         $("body").toggleClass("active--menu")
-    })
+    });
+
+
+    $('.js-form').on('submit', function (event) {
+
+        event.preventDefault();
+        var data = $(this).serialize();
+
+        $.ajax({
+            type: "POST",
+            url: "mail.php",
+            data: data
+        });
+
+        Swal.fire(
+            {
+                title: 'Заявка отправлена, спасибо',
+                text: 'Ожидайте пожалуйста звонка',
+                icon: 'success'
+            }
+        )
+
+        $(this).trigger('reset')
+        $("#modal-callback").modal('hide')
+
+    });
+
 });
 
 
-$(document).mouseup(function(e) {
+$(document).mouseup(function (e) {
 
     var mobileMenu = $("mobile-menu");
     if (mobileMenu.has(e.target).length === 0) {
-       $("body").removeClass("active--menu")
+        $("body").removeClass("active--menu")
     }
 
 
 });
-
-$(function() {
-    document.getElementById('ajax-contact-form').addEventListener('submit', function(evt){
-      var http = new XMLHttpRequest(), f = this;
-      var th = $(this);
-      evt.preventDefault();
-      http.open("POST", "contact.php", true);
-      http.onreadystatechange = function() {
-        if (http.readyState == 4 && http.status == 200) {
-          alert(http.responseText);
-          if (http.responseText.indexOf(f.nameFF.value) == 0) { // очистить поля формы, если в ответе первым словом будет имя отправителя (nameFF)
-            th.trigger("reset");
-          }
-        }
-      }
-      http.onerror = function() {
-        alert('Ошибка, попробуйте еще раз');
-      }
-      http.send(new FormData(f));
-    }, false);
-   
-  });
